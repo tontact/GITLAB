@@ -30,10 +30,10 @@ void main()
        hours = time_now->tm_hour; 
        minutes = time_now->tm_min;
        if (hours < 0 || hours > 25 || minutes < 0 ||
-           minutes > 59) 
+           minutes > 60)
          printf("Incorrect hours or minutes, try again.");  
     } while (hours < 0 || hours > 23 || minutes < 0 ||
-           minutes > 59); 
+           minutes > 60); 
     if (hours >=0 && hours <=11)
       printf("Good Morning, "); 
     else if (hours >= 12 && hours <=18) 
